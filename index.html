@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="resources/css/bulma.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>Search ICS</title>
+  </head>
+
+<body>
+  <!-- Hero -->
+  <section class="hero is-fullheight is-bold is-info">
+    <div class="hero-header">
+      <nav class="navbar">
+        
+      </nav>
+    </div>
+    <div class="hero-content">
+      <div class="container">
+        <p class="title is-1">Search ICS</p>
+        <p class="subtitle is-5">A search engine for all* of UCI's ICS web subdomains.</p>
+        <p class="control has-icon">
+          <input class="input" name="param" id="search_bar" type="text" placeholder="Search here!" autofocus>
+          <i class="fa fa-search"></i>
+      </div>
+    </div>
+    <div class="hero-footer">
+      <div class="container">
+        <div class="tabs is-fullwidth">
+          <ul>
+            <li><a class="subtitle is-6" id="about"><strong>About</strong></a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a class="subtitle is-6 is-disabled">*Excluding calendar.ics.uci.edu, duttgroup.ics.uci.edu</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="columns">
+          <div class="column">
+            <div class="notification is-info">
+              <button class="delete"></button>
+              <div class="message is-info">
+                <div class="message-header">About</div>
+                <div class="message-body">
+                  <div class="columns">
+                    <div class="column is-third">
+		      <p class="subtitle is-5">Project specs:</p>
+                      <p class="subtitle is-6">- Front end built with <a href="http://bulma.io">Bulma</a>.</p>
+                      <p class="subtitle is-6">- Back end built with Java.</p>
+                      <p class="subtitle is-6">- Crawled with <a href="https://github.com/yasserg/crawler4j">crawler4j</a>.</p>
+                      <p class="subtitle is-6">- Files parsed with <a href="http://jsoup.org">Jsoup</a>.</p>
+                    </div>
+                    <div class="column auto">
+                      <p class="subtitle is-5">Team:<p>
+                      <table class="table is-striped">
+                        <thead>
+                          <tr>
+			    <th colspan=2>Name</th>
+                            <th>ID</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+			    <td class="table-icon"><i class="fa fa-bed"></i></td>
+			    <td>Brian Kim</td>
+			    <td>83896263</td>
+			  </tr>
+                          <tr>
+                            <td class="table-icon"><i class="fa fa-female"></i></td>
+                            <td>Christine Lee</td>
+                            <td>59801796</td>
+                          </tr>
+                          <tr>
+                            <td class="table-icon"><i class="fa fa-laptop"></i></td>
+                            <td>Joseph Lee</td>
+                            <td>39259741</td>
+                          </tr>
+                          <tr>
+                            <td class="table-icon"><i class="fa fa-calendar-check-o"></i></td>
+                            <td>Nick Sugiarto</td>
+                            <td>50612443</td>
+			  </tr>
+			</tbody>
+		      </thead>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+	  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="resources/scripts/jquery-2.2.1.min.js"></script>
+  <script src="resources/scripts/main.js"></script>
+</body>
+
+</html>
+
